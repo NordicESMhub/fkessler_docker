@@ -40,4 +40,6 @@ RUN sed -i -e "s/\$CESM_PES/$CESM_PES/g" /home/cesm/.cime/config_machines.xml &&
     
 WORKDIR /home/cesm/cases/fkessler
 
-ENTRYPOINT ./case.submit
+COPY run_fkessler /home/cesm/cases/fkessler
+
+ENTRYPOINT ./run_fkessler
