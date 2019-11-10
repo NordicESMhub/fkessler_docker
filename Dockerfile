@@ -34,7 +34,7 @@ ENV CESM_PES=4
 
 RUN sed -i -e "s/\$CESM_PES/$CESM_PES/g" /home/cesm/.cime/config_machines.xml && \
     create_newcase --case /home/cesm/cases/fkessler --compset FKESSLER \
-    --res T31_g37 --compset FKESSLER --machine espresso --run-unsupported && \
+    --res T31_g37 --machine espresso --run-unsupported && \
     cd /home/cesm/cases/fkessler                                          && \
     ./case.setup && ./case.build
     
