@@ -28,11 +28,13 @@ It should return:
 
 ```
 REPOSITORY                   TAG                     IMAGE ID            CREATED             SIZE
+nordicesmhub/cesm_fkessler   latest                  d4847f70444a        7 days ago          1.79GB
 ```
+
 ### Run the model
 
 ```
-docker run -i -v /opt/uio/inputdata:/home/cesm/inputdata -v /opt/uio/archive:/home/cesm/archive  -t fkessler:latest
+docker run -i -v /opt/uio/inputdata:/home/cesm/inputdata -v /opt/uio/archive:/home/cesm/archive  -t nordicesmhub/cesm_fkessler:latest
 ```
 
 ### Visualize outputs
