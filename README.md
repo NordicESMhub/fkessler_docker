@@ -18,6 +18,17 @@ Make sure inputdata is available (it won't download it as we suppose it is alrea
 docker pull nordicesmhub/cesm_fkessler:latest
 ```
 
+You can use the following command to check your image is locally available:
+
+```
+docker images
+```
+
+It should return:
+
+```
+REPOSITORY                   TAG                     IMAGE ID            CREATED             SIZE
+```
 ### Run the model
 
 ```
