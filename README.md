@@ -10,7 +10,7 @@ Docker container for running simple Fkessler case.
 
 Make sure inputdata is available (it won't download it as we suppose it is already on disk). 
 - The location of the inputdata is `/opt/uio/inputdata` 
-- Model outputs are stored in `/opt/uio/archive` along with the `case` folder (it can be interesting to check timing).
+- Model outputs are stored in `/opt/uio/archive` along with the `cases` folder (it can be interesting to check timing).
 
 **Important**: the folder /opt/uio/archive needs to be writable by unix group `users` (see Dockerfile) otherwise you will get a permission denied when running.
 
