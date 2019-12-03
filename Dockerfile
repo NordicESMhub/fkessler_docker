@@ -84,7 +84,7 @@ ENV CESM_PES=4
 ENV USER=root
 
 RUN sed -i -e "s/\$CESM_PES/$CESM_PES/g" $HOME/.cime/config_machines.xml && \
-    cd cime/scripts &&
+    cd cime/scripts && \
     ./create_newcase --case $HOME/cases/fkessler --compset FKESSLER \
     --res T31_g37 --machine espresso --run-unsupported && \
     cd $HOME/cases/fkessler                            && \
